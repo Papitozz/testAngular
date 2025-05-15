@@ -1,5 +1,7 @@
 # FrontTest
 
+Выполнены 4 основных задания и 1 дополнительное. Имеется адаптация для мобилок.
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
 
 ## Development server
