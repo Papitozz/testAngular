@@ -1,0 +1,12 @@
+@if (profile$ | async; as profile) {
+    <form class="profile-form" [formGroup]="form">
+        <img [src]="profile.data?.avatar" [alt]="profile.data?.first_name">
+        <p>ID: {{ profile.data?.id }}</p>
+        <input type="text" formControlName="email">
+        <input type="text" formControlName="fName">
+        <input type="text" formControlName="lName">
+        <button type="button" (click)="changeProfile()">Редактировать</button>
+    </form>
+} @else {
+    <p class="loading">Загрузка профиля...</p>
+}

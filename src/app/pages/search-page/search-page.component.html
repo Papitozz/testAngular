@@ -1,0 +1,12 @@
+<h2 class="title">Профили</h2>
+<div class="items">
+    @for (profile of profiles; track profile.id) {
+        <app-card [profile]="profile"></app-card>
+    }
+</div>
+<h2 class="title">Ресурсы</h2>
+<div class="items">
+    @for (source of sources; track source.id) {
+        <app-source-card [source]="source"></app-source-card>
+    }
+</div>

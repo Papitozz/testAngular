@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+@if (profile) {
+    <div class="card">
+        <a [routerLink]="['/profile', profile.id]">
+            <img src="{{profile.avatar}}" alt="">
+            <p>{{ profile.first_name }} {{ profile.last_name }}</p>
+            <p>{{ profile.email }}</p>
+        </a>
+        <button type="button" class="delete-profile" (click)="deleteProfile()">Удалить</button>
+    </div>
+} @else {
+    <p>Профиль не загружен или отсутствует...</p>
+}
